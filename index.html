@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Blog Codelândia</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#">
+        <h1 class="header-title"><span class="first-color">Code</span>lândia</h1></a>
+        <div class="search-group">
+            <img src="src/images/icon-search.svg" alt="icon-search" class="icon-search">
+            <input type="text" name="search" placeholder="Pesquisar no blog" class="input-search" onkeyup="searchArticle()">
+        </div>
+    </header>
+    <main class="main">
+        <section class="cards">
+            <div class="card">
+                <div class="info-card">
+                    <p class="date-info">17 de ago, 2024</p>
+                    <span class="favorite" onclick="toggleFavorite(this)">
+                    </span>
+                </div>
+                <div class="content-card">
+                    <h2 class="content-title">O que é uma linguagem de programação? Conheça as principais</h2>
+                    <p class="content-description">Uma das mais populares vertentes da tecnologia da informação, a área de programação segue tendo muita demanda de trabalho justamente pela velocidade com que dispositivos tecnológicos vêm avançando.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="info-card">
+                    <p class="date-info">12 de jul, 2024</p>
+                    <span class="favorite" onclick="toggleFavorite(this)">
+                    </span>
+                </div>
+                <div class="content-card">
+                    <h2 class="content-title">GitHub agora permite fazer login sem precisar de senha</h2>
+                    <p class="content-description">O GitHub anunciou nesta quarta-feira (12) o acesso a partir das passkeys, método de autenticação sem senhas. A novidade está disponível em uma versão beta pública e pode substituir a autenticação em dois fatores.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="info-card">
+                    <p class="date-info">24 de jun, 2024</p>
+                    <span class="favorite" onclick="toggleFavorite(this)">
+                    </span>
+                </div>
+                <div class="content-card">
+                    <h2 class="content-title">Por que os hiperlinks são azuis em sua maioria?</h2>
+                    <p class="content-description">Quem navega na internet, certamente já percebeu que ela conta com diversos recursos para tornar a nossa vida mais fácil. Entre essas opções podemos mencionar os hiperlinks – uma palavra ou termo clicável que direciona o leitor.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script type="text/javascript" src="src/js/script.js"></script>
+</body>
+</html>

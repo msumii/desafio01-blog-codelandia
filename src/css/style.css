@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Space+Grotesk:wght@500&display=swap');
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #121214;
+    width: 100%;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0c0c0e;    
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #E07B67;
+    border-radius: 10px;
+}
+
+.header {
+    width: 100%;
+    height: 291px;
+    background-color: #17171A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .header-title {
+    color: white;
+    font: 500 4rem 'Space Grotesk', sans-serif;
+    margin-top: 64px;
+}
+
+.header .header-title .first-color{
+    color: #E07B67
+}
+
+.header .search-group {
+    width: 1216px;
+    height: 64px;
+    background-color: #202024;
+    border: 2px solid #252529;
+    border-radius: 8px;
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.header .search-group:focus-within {
+    border-color: #E07B67;
+}
+
+
+.header .search-group .icon-search {
+    margin-left: 24px
+}
+
+.header .search-group .input-search {
+    width: 100%;
+    height: 100%;
+    margin-left: 16px;
+    font-size: 20px;
+    color: #AFABB6;
+}
+
+.header .search-group .input-search::placeholder {
+    color: #AFABB6;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.main .cards {
+    width: 1216px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .cards .card {
+    width: 100%;
+    height: auto;
+    background-color: #17171A;
+    margin-top: 40px;
+    border: 2px solid #252529;
+    border-radius: 8px;
+}
+
+.main .cards .card.hidden {
+    display: none;
+}
+
+.main .cards .card:hover {
+    border-color: #E07B67;
+}
+
+.main .cards .card:first-child {
+    margin-top: 80px;
+}
+
+.main .cards .card:last-child {
+    margin-bottom: 80px;
+}
+
+.cards .card .info-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 40px 20px 40px;
+}
+
+.cards .card .info-card .date-info {
+    color: #E07B67;
+    font-size: 1.6rem;
+}
+
+.cards .card .info-card .favorite {
+    cursor: pointer;
+}
+
+.cards .card .info-card .favorite:before {
+    content: url(../images/icon-heart.svg);
+}
+
+.cards .card .info-card .favorite.active:before {
+    content: url(../images/icon-heart-active.svg);
+}
+
+.cards .card .content-card {
+    margin: 0px 40px 40px 40px;
+}
+
+.cards .card .content-card .content-title {
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.cards .card .content-card .content-description {
+    color: #AFABB6;
+    font-size: 2rem;
+    line-height: 160%;
+}
+
+
+
+
+
+
+
